@@ -5,7 +5,7 @@ LOCAL_SRC_FILES:= \
     android_renderscript_RenderScript.cpp
 
 LOCAL_SHARED_LIBRARIES := \
-        libRSSupport_old \
+        libRSSupport \
         libjnigraphics
 
 LOCAL_STATIC_LIBRARIES := \
@@ -23,9 +23,9 @@ LOCAL_CFLAGS +=
 
 LOCAL_LDLIBS := -lpthread
 LOCAL_ADDITIONAL_DEPENDENCIES := $(addprefix $(rs_generated_include_dir)/,rsgApiFuncDecl.h)
-LOCAL_MODULE:= librsjni_old
+LOCAL_MODULE:= librsjni
 LOCAL_ADDITIONAL_DEPENDENCIES += $(rs_generated_source)
 LOCAL_MODULE_TAGS := optional
-LOCAL_REQUIRED_MODULES := libRSSupport_old
+LOCAL_REQUIRED_MODULES := libRSSupport
 
 include $(BUILD_SHARED_LIBRARY)

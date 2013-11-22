@@ -35,7 +35,7 @@ RSG_GENERATOR_SUPPORT:=$(LOCAL_BUILT_MODULE)
 
 include $(CLEAR_VARS)
 LOCAL_CLANG := true
-LOCAL_MODULE := libRSSupport_old
+LOCAL_MODULE := libRSSupport
 LOCAL_SDK_VERSION := $(rs_base_SDK_VERSION)
 
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
@@ -138,7 +138,7 @@ LOCAL_C_INCLUDES += external/stlport/stlport bionic/ bionic/libstdc++/include
 LOCAL_CFLAGS += $(rs_base_CFLAGS)
 
 LOCAL_LDLIBS := -lpthread -ldl -lm
-LOCAL_MODULE:= libRSSupport_old
+LOCAL_MODULE:= libRSSupport
 LOCAL_SDK_VERSION := $(rs_base_SDK_VERSION)
 LOCAL_MODULE_TAGS := optional
 

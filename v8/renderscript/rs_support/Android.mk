@@ -35,7 +35,7 @@ RSG_GENERATOR_SUPPORT:=$(LOCAL_BUILT_MODULE)
 
 include $(CLEAR_VARS)
 LOCAL_CLANG := true
-LOCAL_MODULE := libRSSupport
+LOCAL_MODULE := libRSSupport_old
 LOCAL_SDK_VERSION := 8
 
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
@@ -142,7 +142,7 @@ LOCAL_C_INCLUDES += frameworks/compile/libbcc/include
 LOCAL_CFLAGS += $(rs_base_CFLAGS)
 
 LOCAL_LDLIBS := -lpthread -ldl -lm
-LOCAL_MODULE:= libRSSupport
+LOCAL_MODULE:= libRSSupport_old
 LOCAL_MODULE_TAGS := optional
 
 include $(BUILD_SHARED_LIBRARY)
